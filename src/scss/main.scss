@@ -1,0 +1,25 @@
+@import "settings/_normalize.scss";
+@import "settings/_fonts.scss";
+@import "settings/_colors.scss";
+
+
+body, .container {
+  font-family: $font-base;
+  font-size: $base-font-size;
+  background: $color-background;
+}
+
+
+.App-header {
+  background: cornflowerblue;
+  display: flex;
+  justify-content: right;
+  & nav{
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.App-footer {
+  background: lightblue;
+}
