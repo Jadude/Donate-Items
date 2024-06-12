@@ -11,12 +11,13 @@ function App() {
                     <Route path="/" element={<MainLayout/>}>
                         <Route path="/" element={<Home/>}/>
                         {/*<Route path="/" element={<Form/>}/>*/}
-                        <Route path="/login" element={<Login/>}/>
+
                         {/*<Route path="/" element={<SignUp/>}/>*/}
                         {/*<Route path="/" element={<Logout/>}/>*/}
                         {/*<Route path="/panel" element={<AdminPanel/>}/>*/}
                         {/*<Route path="*" element={<Error404 />}/>*/}
                     </Route>
+                    <Route path="/login" element={<Login/>}/>0
                 </Routes>
             </BrowserRouter>
     );
