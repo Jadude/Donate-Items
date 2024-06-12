@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+<<<<<<< HEAD
+=======
+import './scss/main.scss';
+>>>>>>> master
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
