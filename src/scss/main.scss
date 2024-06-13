@@ -11,7 +11,7 @@ body, .container {
 
 
 .App-header {
-  background: cornflowerblue;
+  background: $color-background;
   display: flex;
   justify-content: right;
   & nav{
@@ -22,4 +22,9 @@ body, .container {
 
 .App-footer {
   background: lightblue;
+}
+
+.container {
+  width: 1900px;
+  background : $color-yellow;
 }

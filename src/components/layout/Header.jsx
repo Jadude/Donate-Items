@@ -1,19 +1,21 @@
 import React from 'react';
-import navLinkBase from "../utilities/NavLinkBase";
 
 const Header = () => {
     return (
         <header className="App-header">
-        <section>
+        <section class = "App-header-log">
+            <ul></ul>
             <a href="#">Zaloguj</a>
             <a href="#">Załóż konto</a>
         </section>
         <nav>
-            <p>Start</p>
-            <p>O co chodzi?</p>
-            <p>O nas</p>
-            <p>Funacja i organizacje</p>
-            <p>Kontakt</p>
+            <ul>
+            <li>Start</li>
+            <li>O co chodzi?</li>
+            <li>O nas</li>
+            <li>Funacja i organizacje</li>
+            <li>Kontakt</li>
+            </ul>
         </nav>
         </header>
 )
