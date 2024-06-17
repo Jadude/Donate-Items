@@ -1,12 +1,18 @@
 @import "settings/_normalize.scss";
 @import "settings/_fonts.scss";
 @import "settings/_colors.scss";
+@import "components/footer.scss";
 
 
-body, .container {
+body {
   font-family: $font-base;
   font-size: $base-font-size;
   background: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 
@@ -20,11 +26,14 @@ body, .container {
   }
 }
 
-.App-footer {
-  background: lightblue;
-}
+
 
 .container {
-  width: 1900px;
+  width: 1920px;
   background : $color-yellow;
+
+}
+
+li {
+  list-style: none;
 }

@@ -3,14 +3,15 @@ import React from 'react';
 const Header = () => {
     return (
         <header className="App-header">
-        <section class = "App-header-log">
-            <ul></ul>
-            <a href="#">Zaloguj</a>
-            <a href="#">Załóż konto</a>
+        <section className = "App-header-log">
+            <ul>
+            <li><a href="/login">Zaloguj</a></li>
+            <li><a href="/signup">Załóż konto</a></li>
+            </ul>
         </section>
         <nav>
             <ul>
-            <li>Start</li>
+            <li><a href="/">Start</a></li>
             <li>O co chodzi?</li>
             <li>O nas</li>
             <li>Funacja i organizacje</li>
