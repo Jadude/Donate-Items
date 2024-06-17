@@ -1,8 +1,8 @@
 @import "settings/_normalize.scss";
 @import "settings/_fonts.scss";
 @import "settings/_colors.scss";
+@import "components/header.scss";
 @import "components/footer.scss";
-
 
 body {
   font-family: $font-base;
@@ -13,25 +13,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  color: $color-text;
 }
-
-
-.App-header {
-  background: $color-background;
-  display: flex;
-  justify-content: right;
-  & nav{
-    display: flex;
-    gap: 5px;
-  }
-}
-
-
 
 .container {
-  width: 1920px;
+  width: 1900px;
+  //background : $color-background;
   background : $color-yellow;
+}
 
+
+a {
+  text-decoration: none;
+  color: $color-text;
 }
 
 li {
