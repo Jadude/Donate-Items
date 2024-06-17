@@ -22,7 +22,6 @@ body {
   background : $color-yellow;
 }
 
-
 a {
   text-decoration: none;
   color: $color-text;
@@ -30,4 +29,16 @@ a {
 
 li {
   list-style: none;
+}
+
+.home-start {
+  background: cornflowerblue;
+}
+
+.home-three_columns {
+  background: red;
+}
+
+.home-four_steps {
+  background: cornflowerblue;
 }
