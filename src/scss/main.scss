@@ -5,6 +5,10 @@
 @import "components/footer.scss";
 @import 'components/login.scss';
 
+// HOME
+@import "components/home.scss";
+@import "components/_three_columns.scss";
+
 body {
   font-family: $font-base;
   font-size: $base-font-size;
@@ -34,10 +38,6 @@ li {
 
 .home-start {
   background: cornflowerblue;
-}
-
-.home-three_columns {
-  background: $color-yellow;
 }
 
 .home-four_steps {

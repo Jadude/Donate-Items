@@ -1,0 +1,28 @@
+.home-start {
+  display: flex;
+  justify-content: flex-end;
+
+  &-image img {
+    width: 885px;
+    height: 963px;
+    position: absolute;
+    top: 0;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-buttons {
+display: flex;
+      gap: 44px;
+      font-size: 36px;
+      padding: 13px 51px;
+
+      button {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

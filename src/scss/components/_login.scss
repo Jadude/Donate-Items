@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   & .formlog {
-    background: $color-lightgray;
+    background: $color-login-form;
+    width: 385px;
+    height: 235px;
   }
 }

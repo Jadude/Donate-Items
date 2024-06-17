@@ -10,7 +10,6 @@ const Login = () => {
             <div className="login">
                 <h2>Zaloguj się</h2>
                 <img src={decoration} alt="decoration"/>
-                <span>decor</span>
                 <div className="formlog">
                     email
                     hasło
