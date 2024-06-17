@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <nav className ="App-header-nav">
             <ul>
-            <li><a href="/public">Start</a></li>
+            <li><a href="/">Start</a></li>
             <li>O co chodzi?</li>
             <li>O nas</li>
             <li>Funacja i organizacje</li>

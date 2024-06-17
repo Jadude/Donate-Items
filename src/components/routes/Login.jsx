@@ -1,17 +1,23 @@
 import React from 'react';
 import Header from "../layout/Basic/Header";
+import decoration from '../../assets/icons/Decoration.svg';
+
 
 const Login = () => {
     return (
         <>
-            <Header />
-        <h2>Zaloguj się</h2>
-    <span>decor</span>
-    <div>grey box
-        email
-        hasło
-    </div>
-    <span>załóż konto</span>
+            <Header/>
+            <div className="login">
+                <h2>Zaloguj się</h2>
+                <img src={decoration} alt="decoration"/>
+                <span>decor</span>
+                <div className="formlog">
+                    email
+                    hasło
+                </div>
+                <button>załóż konto</button>
+                <button>zaloguj się</button>
+            </div>
         </>
     );
 };

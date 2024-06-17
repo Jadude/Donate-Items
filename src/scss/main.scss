@@ -3,6 +3,7 @@
 @import "settings/_colors.scss";
 @import "components/header.scss";
 @import "components/footer.scss";
+@import 'components/login.scss';
 
 body {
   font-family: $font-base;
@@ -55,3 +56,4 @@ li {
 .home-form {
   background: cornflowerblue;
 }
+
