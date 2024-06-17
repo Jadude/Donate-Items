@@ -14,12 +14,12 @@ body {
   align-items: center;
   height: 100%;
   color: $color-text;
+  background: lightblue;
 }
 
 .container {
   width: 1900px;
-  //background : $color-background;
-  background : $color-yellow;
+  background : $color-background;
 }
 
 a {
@@ -36,9 +36,22 @@ li {
 }
 
 .home-three_columns {
-  background: red;
+  background: $color-yellow;
 }
 
 .home-four_steps {
+  background: cornflowerblue;
+}
+
+.home-about_us {
+  background: cornflowerblue;
+}
+
+
+.home-help{
+  background: cornflowerblue;
+}
+
+.home-form {
   background: cornflowerblue;
 }

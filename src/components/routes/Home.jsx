@@ -4,6 +4,9 @@ import Footer from "../layout/Basic/Footer";
 import HomeStart from "../layout/Home/HomeStart";
 import HomeThreeColumns from "../layout/Home/HomeThreeColumns";
 import HomeFourSteps from "../layout/Home/HomeFourSteps";
+import HomeAboutUs from "../layout/Home/HomeAboutUs";
+import HomeHelp from "../layout/Home/HomeHelp";
+import HomeForm from "../layout/Home/HomeForm";
 
 const Home = () => {
     return (
@@ -13,16 +16,9 @@ const Home = () => {
                 <HomeStart/>
                 <HomeThreeColumns/>
                 <HomeFourSteps/>
-                <section className="aboutUs">
-                    <p>O nas</p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ex!</span>
-                </section>
-                <section className="help">
-                    <h3>Komu pomagamy?</h3>
-                </section>
-                <section className="form">
-                    <h3>Skontaktuj się z nami</h3>
-                </section>
+                <HomeAboutUs/>
+                <HomeHelp/>
+                <HomeForm/>
             </main>
             <Footer/>
         </>
