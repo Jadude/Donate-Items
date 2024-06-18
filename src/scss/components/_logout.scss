@@ -1,0 +1,26 @@
+.Logout-container {
+  display: flex;
+justify-content: center;
+  padding-top: 62px;
+}
+
+.Logout-box {
+  width: 414px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & h2 {
+    letter-spacing: -0.8px;
+    text-align: center;
+    font: normal normal normal 40px/55px $font-base;
+  }
+  a {
+    margin-top: 40px;
+    font: normal normal 300 18px/32px $font-base;
+    letter-spacing: 0;
+    padding: 13px 18px;
+    border: 0.75px solid $color-text;
+
+  }
+}
