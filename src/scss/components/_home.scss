@@ -15,14 +15,10 @@
     align-items: center;
 
     &-buttons {
-display: flex;
+      display: flex;
       gap: 44px;
       font-size: 36px;
       padding: 13px 51px;
-
-      button {
-        text-transform: uppercase;
-      }
     }
   }
 }

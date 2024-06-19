@@ -10,13 +10,13 @@ const HomeStart = () => {
                 <img src={homeHeroImage} alt="things to donate"/>
             </div>
             <div className="home-start-info">
-                <Header />
+                <Header/>
                 <h2>Zacznij pomagać!</h2>
                 <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
                 <img src={decoration} alt="decoration"/>
                 <div className="home-start-info-buttons">
-                    <button>oddaj rzeczy</button>
-                    <button>zorganizuj zbiórkę</button>
+                    <a href="/login" className="big-white-button">oddaj rzeczy</a>
+                    <a href="/login" className="big-white-button">zorganizuj zbiórkę</a>
                 </div>
             </div>
         </section>

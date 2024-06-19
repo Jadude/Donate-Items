@@ -1,0 +1,28 @@
+.home-about_us {
+  background: $color-login-form;
+  display: flex;
+
+  &_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 186px 150px 0 150px;
+    width: 657px;
+    & p {
+      text-align: center;
+      font: normal normal normal 30px/54px $font-base;
+      letter-spacing: -0.6px;
+    }
+    img:last-of-type {
+      align-self: flex-end;
+    }
+  }
+
+  &_right {
+    max-width: 942px;
+    height: auto;
+    display: block;
+    overflow: hidden;
+  }
+}
