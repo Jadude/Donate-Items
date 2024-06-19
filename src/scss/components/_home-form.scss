@@ -1,25 +1,27 @@
 
 .home-form {
+
+  background-image: url("../../assets/images/Background-Contact-Form.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../assets/images/Background-Contact-Form.jpg");
-  //opacity: 0.5;
+  opacity: 0.25;
   display: flex;
-  &-left {
-    width: 1230px;
-    height: auto;
-  }
+  justify-content: end;
+  padding-right: 120px;
+  padding-top: 200px;
+
   &-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 1026px;
-    //opacity: 1;
     & form {
       display: flex;
       flex-direction: column;
 
     }
   }
+}
+
+form {
+  opacity: 1;
 }

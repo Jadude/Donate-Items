@@ -1,10 +1,14 @@
 .App-footer {
-  background: $color-background;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 142px 22px 142px;
-  position: relative;
+  padding: 0 120px 20px 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
 
   &-text {
     margin: 0 auto;

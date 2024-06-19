@@ -1,0 +1,27 @@
+.home-help {
+  background: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-select {
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+    padding: 68px 0 80px 0;
+    & a {
+      margin: 0 50px;
+      text-align: center;
+      font: normal normal normal 24px/24px $font-base;
+      letter-spacing: 0;
+    }
+  }
+
+  & p {
+    text-align: center;
+    font: normal normal normal 22px/30px $font-base;
+    letter-spacing: 0;
+    width: 640px;
+  }
+}

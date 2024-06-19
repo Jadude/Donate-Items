@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from "../layout/Basic/Header";
+import HomeHeader from "../layout/Basic/HomeHeader";
 
 const SignUp = () => {
     return (
         <>
-            <Header />
+            <HomeHeader />
         <h2>Zarejestruj się</h2>
     <span>decor</span>
     <div>grey box

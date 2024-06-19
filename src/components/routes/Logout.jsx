@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from "../layout/Basic/Header";
+import HomeHeader from "../layout/Basic/HomeHeader";
 import decoration from '../../assets/icons/Decoration.svg';
 
 const Logout = () => {
     return (
         <>
-        <Header />
+        <HomeHeader />
         <div className="Logout-container">
             <div className="Logout-box">
                 <h2>Wylogowanie nastąpiło pomyślnie!</h2>

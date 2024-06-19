@@ -4,15 +4,7 @@ import {NavLink} from 'react-router-dom';
 const NavLinkBase = (to, title) => {
     return (
         <NavLink className="nav-link"
-                 to={to}
-                 style={({isActive}) =>
-                     isActive
-                         ? {textDecoration: "underline", fontWeight: "bold"}
-                         : {textDecoration: "none"}
-                     // style in scss activeClassName=
-                 }
-                 end
-        >
+                 to={to}>
             {title}
         </NavLink>
     )

@@ -5,8 +5,6 @@ import decoration from '../../../assets/icons/Decoration.svg';
 const HomeForm = () => {
     return (
         <div className="home-form">
-            <section className="home-form-left">
-            </section>
             <section className="home-form-right">
             <h2>Skontaktuj się z nami</h2>
             <img src={decoration} alt="decoration"/>

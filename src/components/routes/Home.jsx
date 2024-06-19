@@ -7,10 +7,12 @@ import HomeFourSteps from "../layout/Home/HomeFourSteps";
 import HomeAboutUs from "../layout/Home/HomeAboutUs";
 import HomeHelp from "../layout/Home/HomeHelp";
 import HomeForm from "../layout/Home/HomeForm";
+import HomeHeader from "../layout/Basic/HomeHeader";
 
 const Home = () => {
     return (
         <>
+            <HomeHeader />
             <main>
                 <HomeStart/>
                 <HomeThreeColumns/>

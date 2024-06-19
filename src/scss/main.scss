@@ -7,30 +7,28 @@
 @import "components/logout.scss";
 
 // HOME
-@import "components/home.scss";
+@import "components/home-start";
 @import "components/_three_columns.scss";
 @import "components/four_steps";
 @import "components/about_us.scss";
 @import "components/home-form.scss";
+@import "components/_help.scss";
 
 body {
   font-family: $font-base;
   font-size: $base-font-size;
-  background: $color-background;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
   color: $color-text;
-  background: lightblue;
+  background: $color-background;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
+  position: relative;
+  margin:  0 auto;
+  padding: 0;
+  box-sizing: border-box;
   width: 100vw;
-  max-width: 1900px;
-  background: $color-background;
-
 }
 
 a {
@@ -49,12 +47,6 @@ h2 {
   color: $color-text;
 }
 
-
-.home-start {
-  background: cornflowerblue;
-}
-
-
 .big-white-button {
   width: 310px;
   height: 120px;
@@ -68,31 +60,11 @@ h2 {
   text-align: center;
 }
 
-.home-help {
-  background: $color-background;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  &-select {
-    width: 760px;
-    display: flex;
-    justify-content: space-between;
-    padding: 68px 0 80px 0;
-    & a {
-      margin: 0 50px;
-      text-align: center;
-      font: normal normal normal 24px/24px $font-base;
-      letter-spacing: 0;
-    }
-  }
-
-  & p {
-    text-align: center;
-    font: normal normal normal 22px/30px $font-base;
-    letter-spacing: 0;
-    width: 640px;
-  }
+main {
+  position: relative;
+  flex: 1
 }
 
+nav ul li {
+  cursor: pointer;
+}

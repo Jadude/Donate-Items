@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from "../layout/Basic/Header";
+import HomeHeader from "../layout/Basic/HomeHeader";
 
 const Error404 = () => {
     return (
         <>
-            <Header />
+            <HomeHeader />
         <h2>Nie znaleziono danej strony</h2>
     <span>decor</span>
     <div>błąd 404

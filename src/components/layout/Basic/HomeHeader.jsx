@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-scroll';
 
-const Header = () => {
+const HomeHeader = () => {
     return (
         <header className="App-header">
             <div className="App-header-log">
@@ -24,4 +24,4 @@ const Header = () => {
         ;
 };
 
-export default Header;
+export default HomeHeader;

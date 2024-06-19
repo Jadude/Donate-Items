@@ -1,16 +1,15 @@
 import React from 'react';
 import decoration from '../../../assets/icons/Decoration.svg';
 import homeHeroImage from '../../../assets/images/Home-Hero-Image.jpg';
-import Header from "../Basic/Header";
+
 
 const HomeStart = () => {
     return (
         <section className="home-start">
             <div className="home-start-image">
-                <img src={homeHeroImage} alt="things to donate"/>
+                {/*<img src={homeHeroImage} alt="things to donate"/>*/}
             </div>
             <div className="home-start-info">
-                <Header/>
                 <h2>Zacznij pomagać!</h2>
                 <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
                 <img src={decoration} alt="decoration"/>
