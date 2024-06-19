@@ -1,0 +1,25 @@
+
+.home-form {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/images/Background-Contact-Form.jpg");
+  //opacity: 0.5;
+  display: flex;
+  &-left {
+    width: 1230px;
+    height: auto;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1026px;
+    //opacity: 1;
+    & form {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+}

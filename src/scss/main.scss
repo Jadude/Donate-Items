@@ -11,6 +11,7 @@
 @import "components/_three_columns.scss";
 @import "components/four_steps";
 @import "components/about_us.scss";
+@import "components/home-form.scss";
 
 body {
   font-family: $font-base;
@@ -93,9 +94,5 @@ h2 {
     letter-spacing: 0;
     width: 640px;
   }
-}
-
-.home-form {
-  background: cornflowerblue;
 }
 
