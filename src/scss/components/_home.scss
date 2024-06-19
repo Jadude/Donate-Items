@@ -1,11 +1,11 @@
 .home-start {
   display: flex;
   justify-content: flex-end;
+  gap: 66px;
 
   &-image img {
     width: 885px;
     height: 963px;
-    position: absolute;
     top: 0;
   }
 

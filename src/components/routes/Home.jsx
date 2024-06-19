@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "../layout/Basic/Header";
+import {Element} from 'react-scroll';
 import Footer from "../layout/Basic/Footer";
 import HomeStart from "../layout/Home/HomeStart";
 import HomeThreeColumns from "../layout/Home/HomeThreeColumns";
@@ -11,18 +11,26 @@ import HomeForm from "../layout/Home/HomeForm";
 const Home = () => {
     return (
         <>
-            <Header/>
             <main>
                 <HomeStart/>
                 <HomeThreeColumns/>
-                <HomeFourSteps/>
-                <HomeAboutUs/>
-                <HomeHelp/>
-                <HomeForm/>
+                <Element name="section1">
+                    <HomeFourSteps/>
+                </Element>
+                <Element name="section2">
+                    <HomeAboutUs/>
+                </Element>
+                <Element name="section3">
+                    <HomeHelp/>
+                </Element>
+                <Element name="section4">
+                    <HomeForm/>
+                </Element>
             </main>
             <Footer/>
         </>
-    );
+    )
+        ;
 };
 
 export default Home;

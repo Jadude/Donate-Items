@@ -17,9 +17,12 @@
 
     & li {
       padding: 9px 10px;
-      border: 1px solid $color-yellow;
       font-size: 14px;
+    &:last-child {
+      border: 1px solid $color-yellow;
     }
+    }
+
   }
 
   &-nav {

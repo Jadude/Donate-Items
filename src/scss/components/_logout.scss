@@ -2,13 +2,15 @@
   display: flex;
 justify-content: center;
   padding-top: 62px;
+  height: 100%
+;
 }
 
 .Logout-box {
   width: 414px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   & h2 {
     letter-spacing: -0.8px;

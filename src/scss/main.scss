@@ -9,6 +9,7 @@
 // HOME
 @import "components/home.scss";
 @import "components/_three_columns.scss";
+@import "components/four_steps";
 
 body {
   font-family: $font-base;
@@ -25,7 +26,7 @@ body {
 
 .container {
   width: 1900px;
-  background : $color-background;
+  background: $color-background;
 }
 
 a {
@@ -37,20 +38,40 @@ li {
   list-style: none;
 }
 
+h2 {
+  text-align: center;
+  font: normal normal normal 38px/55px $font-base;
+  letter-spacing: -0.76px;
+  color: $color-text;
+}
+
+
 .home-start {
   background: cornflowerblue;
 }
 
-.home-four_steps {
-  background: cornflowerblue;
+
+
+.big-white-button {
+  width: 310px;
+  height: 120px;
+  border: 0.75px solid $color-text;
+  background: $color-background;
+  text-transform: uppercase;
+  font: normal normal 300 36px/45px $font-base;
+  letter-spacing: 0;
+  color: $color-text;
+  align-content: center;
+  text-align: center;
 }
+
 
 .home-about_us {
   background: cornflowerblue;
 }
 
 
-.home-help{
+.home-help {
   background: cornflowerblue;
 }
 

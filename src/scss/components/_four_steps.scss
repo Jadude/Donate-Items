@@ -1,0 +1,45 @@
+.home-four_steps {
+  background: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 93px;
+}
+
+.four-steps-box {
+  background: $color-login-form;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 178px;
+  margin-top: 44px;
+  margin-bottom: 35px;
+}
+
+.step {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 73px;
+  padding-bottom: 80px;
+  & p {
+    text-align: center;
+    font: normal normal normal 18px/18px $font-base;
+    letter-spacing: 0;
+    color: $color-text;
+  }
+  & .divider {
+    border-bottom: 1px solid black;
+    width: 70px;
+  }
+  & .step-info {
+    text-align: center;
+    font: normal normal normal 16px/16px $font-base;
+    letter-spacing: 0;
+    color: $color-text;
+    min-height: 40px;
+  }
+}
