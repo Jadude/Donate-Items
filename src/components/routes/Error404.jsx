@@ -6,10 +6,9 @@ const Error404 = () => {
         <>
             <HomeHeader />
         <h2>Nie znaleziono danej strony</h2>
-    <span>decor</span>
+
     <div>błąd 404
     </div>
-    <span>załóż konto</span>
         </>
     );
 };
