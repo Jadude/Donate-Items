@@ -10,11 +10,11 @@ const HomeForm = () => {
             <img src={decoration} alt="decoration"/>
             <form className="contact-form">
                 <label>Wpisz swoje imię</label>
-                <input type="text" id="name" name="name" placeholder="Jakub" required/>
+                <input type="text" id="name" name="name-contact" placeholder="Jakub" required/>
                 <label>Wpisz swój email</label>
-                <input type="email" id="email" placeholder="abc@xyz.pl" required/>
+                <input type="email" id="email-contact" placeholder="abc@xyz.pl" required/>
                 <label>Wpisz swoją wiadomość</label>
-                <textarea id="message" name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." rows="5" required></textarea>
+                <textarea id="message" name="message-contact" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." rows="5" required></textarea>
                 <button type="submit">Wyślij</button>
             </form>
             </section>

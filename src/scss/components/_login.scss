@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  & .formlog {
+  padding-top: 200px; // edit
+  & form {
     background: $color-login-form;
     width: 385px;
     height: 235px;
+    display: flex;
+    flex-direction: column;
   }
 }

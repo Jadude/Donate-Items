@@ -6,14 +6,14 @@ const LoginHeader = () => {
             <div className="App-header-log">
                 <ul>
                     <li><a href="/login">Zaloguj</a></li>
-                    <li><a href="/signup">Załóż konto</a></li>
+                    <li><a href="/src/components/routes/Register">Załóż konto</a></li>
                 </ul>
             </div>
             <nav className="App-header-nav">
                 <ul>
                     <li><a href="/">Start</a></li>
                     <li><a href="/">O co chodzi?</a></li>
-                    <li><a href="/">O nas</a></li>
+                    <li><a href="/logout">O nas</a></li>
                     <li><a href="/">Funacja i organizacje</a></li>
                     <li><a href="/">Kontakt</a></li>
                 </ul>

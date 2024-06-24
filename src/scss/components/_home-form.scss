@@ -14,14 +14,11 @@
     display: flex;
     flex-direction: column;
     height: 1026px;
+    opacity: 1;
     & form {
       display: flex;
       flex-direction: column;
 
     }
   }
-}
-
-form {
-  opacity: 1;
 }
