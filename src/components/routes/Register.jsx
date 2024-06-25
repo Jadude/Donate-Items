@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from '../../firebase';
+
+
 import LoginHeader from "../layout/Basic/HomeHeader";
 import decoration from '../../assets/icons/Decoration.svg';
-import { auth } from '../../firebase-config';
 
 const Register = () => {
     const [email, setEmail] = useState('');

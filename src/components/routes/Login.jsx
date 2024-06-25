@@ -1,7 +1,7 @@
 import React, { useState }  from 'react';
 // Logging logic
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from '../../firebase-config';
+import { auth } from '../../firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 // Components
 import LoginHeader from "../layout/Basic/HomeHeader";
 // Assets

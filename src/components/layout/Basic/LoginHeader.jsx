@@ -3,7 +3,7 @@ import React from 'react';
 const LoginHeader = () => {
     return (
         <header className="App-header">
-            <div className="App-header-log">
+            <div className="App-header-log App-header-log-login">
                 <ul>
                     <li><a href="/login">Zaloguj</a></li>
                     <li><a href="/src/components/routes/Register">Załóż konto</a></li>
