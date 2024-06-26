@@ -1,27 +1,66 @@
 .home-help {
+  text-align: center;
   background: $color-background;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  &-select {
-    width: 760px;
-    display: flex;
-    justify-content: space-between;
-    padding: 68px 0 80px 0;
-    & a {
-      margin: 0 50px;
-      text-align: center;
-      font: normal normal normal 24px/24px $font-base;
-      letter-spacing: 0;
-    }
-  }
-
-  & p {
+  .sentence {
     text-align: center;
     font: normal normal normal 22px/30px $font-base;
     letter-spacing: 0;
     width: 640px;
+
+  }
+
+  .home-help-select {
+    margin-bottom: 20px;
+    width: 760px;
+    display: flex;
+    padding: 68px 0 80px 0;
+
+    button {
+      text-align: center;
+      font: normal normal normal 24px/24px $font-base;
+      letter-spacing: 0;
+      background-color: transparent;
+      border: 1px solid $color-text;
+      margin: 0 75px;
+      padding: 10px 20px;
+      color: $color-text;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+  }
+
+  table {
+    width: 1344px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+    th, td {
+      border-bottom: 1px solid $color-text;
+      padding: 8px;
+    }
+  }
+
+  .pagination {
+    button {
+      margin: 0 5px;
+      padding: 10px 15px;
+      background-color: transparent;
+      color: $color-text;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      border: 1px solid transparent;
+      &.active {
+        border: 1px solid $color-text;
+      }
+    }
   }
 }

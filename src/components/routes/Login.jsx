@@ -1,11 +1,13 @@
 import React, { useState }  from 'react';
+
 // Logging logic
 import { auth } from '../../firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 // Components
-import LoginHeader from "../layout/Basic/HomeHeader";
+import LogOutHeader from "../layout/Basic/LogOutHeader";
 // Assets
 import decoration from '../../assets/icons/Decoration.svg';
+
 
 
 const Login = () => {
@@ -19,20 +21,21 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                console.log('Zalogowano:', user);
-                // Przekierowanie lub dalsza logika
+                console.log('Logged:', user);
+                // to home page
+                window.location.href = '/';
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                console.error('Błąd logowania:', errorCode, errorMessage);
+                console.error('Login error:', errorCode, errorMessage);
                 setError(errorMessage);
             });
     };
 
     return (
         <>
-            <LoginHeader/>
+            <LogOutHeader/>
             <div className="login">
                 <h2>Zaloguj się</h2>
                 <img src={decoration} alt="decoration"/>
@@ -47,10 +50,11 @@ const Login = () => {
                     <button type="submit">Zaloguj się</button>
                 </form>
                 {error && <p className="error-message">{error}</p>}
-                {/*<button onClick={() => window.location.href='/register'}>Załóż konto</button>*/}
+                <button onClick={() => window.location.href='/register'}>Załóż konto</button>
             </div>
         </>
     );
 };
 
 export default Login;
+

@@ -1,26 +1,25 @@
 import React from 'react';
 
-const LoginHeader = () => {
+const LogOutHeader = () => {
     return (
         <header className="App-header">
             <div className="App-header-log App-header-log-login">
                 <ul>
                     <li><a href="/login">Zaloguj</a></li>
-                    <li><a href="/src/components/routes/Register">Załóż konto</a></li>
+                    <li><a href="/signup">Załóż konto</a></li>
                 </ul>
             </div>
             <nav className="App-header-nav">
                 <ul>
                     <li><a href="/">Start</a></li>
-                    <li><a href="/">O co chodzi?</a></li>
-                    <li><a href="/logout">O nas</a></li>
-                    <li><a href="/">Funacja i organizacje</a></li>
-                    <li><a href="/">Kontakt</a></li>
+                    <li><a href="/#section1">O co chodzi?</a></li>
+                    <li><a href="/#section2">O nas</a></li>
+                    <li><a href="/#section3">Funacja i organizacje</a></li>
+                    <li><a href="/#section4">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
-    )
-        ;
+    );
 };
 
-export default LoginHeader;
+export default LogOutHeader;

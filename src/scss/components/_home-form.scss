@@ -1,24 +1,109 @@
-
 .home-form {
-
-  background-image: url("../../assets/images/Background-Contact-Form.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.25;
+  position: relative;
   display: flex;
   justify-content: end;
   padding-right: 120px;
   padding-top: 200px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../assets/images/Background-Contact-Form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.25;
+    z-index: -1;
+  }
 
   &-right {
     display: flex;
     flex-direction: column;
     height: 1026px;
     opacity: 1;
-    & form {
+    z-index: 1;
+    form {
       display: flex;
       flex-direction: column;
+      z-index: 1;
+    }
+  }
+}
 
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  .input-group {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #000;
+      padding: 5px;
+      outline: none;
+      font-size: 16px;
+      color: #000;
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      &:focus {
+        border-bottom-color: #007bff;
+      }
+    }
+  }
+
+  textarea {
+    background: transparent; // Ustawienie przezroczystości
+    border: none; // Usunięcie standardowego obramowania
+    border-bottom: 1px solid #000; // Dodanie dolnego obramowania
+    padding: 5px; // Dodanie paddingu dla lepszej estetyki
+    outline: none; // Usunięcie konturu na focus
+    font-size: 16px; // Ustawienie rozmiaru czcionki
+    color: #000; // Kolor tekstu
+    margin-bottom: 15px; // Przestrzeń pomiędzy textarea a przyciskiem
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5); // Kolor dla placeholdera
+    }
+
+    &:focus {
+      border-bottom-color: #007bff; // Zmiana koloru dolnego obramowania na focus
+    }
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: $color-background;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    //transition: background-color 0.3s ease;
+    align-self: flex-end; // Ustawienie przycisku na prawej stronie
+
+    &:hover {
+      //background-color: #0056b3;
     }
   }
 }

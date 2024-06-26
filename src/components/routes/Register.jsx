@@ -77,7 +77,7 @@ const Register = () => {
                 </form>
                 {error && <p className="error-message">{error}</p>}
                 {success && <p className="success-message">{success}</p>}
-                {/*<button onClick={() => window.location.href='/login'}>Masz już konto? Zaloguj się</button>*/}
+                <button onClick={() => window.location.href = '/login'}>Zaloguj się</button>
             </div>
         </>
     );

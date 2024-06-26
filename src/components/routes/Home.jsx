@@ -16,16 +16,16 @@ const Home = () => {
             <main>
                 <HomeStart/>
                 <HomeThreeColumns/>
-                <Element name="section1">
+                <Element name="section1" id="section1">
                     <HomeFourSteps/>
                 </Element>
-                <Element name="section2">
+                <Element name="section2" id="section2">
                     <HomeAboutUs/>
                 </Element>
-                <Element name="section3">
+                <Element name="section3" id="section3">
                     <HomeHelp/>
                 </Element>
-                <Element name="section4">
+                <Element name="section4" id="section4">
                     <HomeForm/>
                 </Element>
             </main>
