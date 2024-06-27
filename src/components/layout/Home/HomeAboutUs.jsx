@@ -18,7 +18,8 @@ const HomeAboutUs = () => {
                 <img src={peopleImage} alt="people"/>
             </section>
         </div>
-    );
+)
+    ;
 };
 
 export default HomeAboutUs;

@@ -7,7 +7,7 @@ const HomeHeader = () => {
             <div className="App-header-log">
                 <ul>
                     <li><a href="/login">Zaloguj</a></li>
-                    <li><a href="/signup">Załóż konto</a></li>
+                    <li><a href="/register">Załóż konto</a></li>
                 </ul>
             </div>
             <nav className="App-header-nav">

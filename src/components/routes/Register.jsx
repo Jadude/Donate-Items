@@ -74,10 +74,10 @@ const Register = () => {
                         required
                     />
                     <button type="submit">Zarejestruj się</button>
+                    <button type="button" onClick={() => window.location.href = '/login'}>Zaloguj się</button>
                 </form>
                 {error && <p className="error-message">{error}</p>}
                 {success && <p className="success-message">{success}</p>}
-                <button onClick={() => window.location.href = '/login'}>Zaloguj się</button>
             </div>
         </>
     );

@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/routes/Home";
 import Login from "./components/routes/Login";
 import Logout from "./components/routes/Logout";
-import SignUp from "./components/routes/Register";
+import Register from "./components/routes/Register";
 import Error404 from "./components/routes/Error404";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/login" element={<Login/>}/>
-                <Route path="/signup" element={<SignUp/>}/>
+                <Route path="/register" element={<Register/>}/>
                 <Route path="/logout" element={<Logout/>}/>
                 <Route path="*" element={<Error404 />}/>
                 {/*<Route path="/" element={<Form/>}/>*/}
