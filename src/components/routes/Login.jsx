@@ -50,8 +50,8 @@ const Login = () => {
                                required/>
                     </section>
                     <section className="register-buttons">
-                        <button type="submit">Zaloguj się</button>
                         <button type="button" onClick={() => window.location.href = '/register'}>Załóż konto</button>
+                        <button type="submit">Zaloguj się</button>
                     </section>
                 </form>
                 {error && <p className="error-message">{error}</p>}
