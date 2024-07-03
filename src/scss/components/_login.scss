@@ -8,10 +8,10 @@
   }
   & .register-inputs {
     background: $color-login-form;
+    padding: 40px 67.5px;
     display: flex;
     flex-direction: column;
-    //align-items: center;
-    padding: 40px 67.5px;
+    align-items: center; //fix
     & label {
       font-weight: bold;
       padding-top: 30px;

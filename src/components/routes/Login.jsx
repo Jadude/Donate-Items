@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 // Logging logic
 import {auth} from '../../firebase';
 import {signInWithEmailAndPassword} from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 // Components
 import HomeHeaderLogIn from "../layout/NotLogged/HomeHeaderLogIn";
 // Assets
@@ -13,6 +14,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -22,7 +24,7 @@ const Login = () => {
                 const user = userCredential.user;
                 console.log('Logged:', user);
                 // to home page
-                window.location.href = '/';
+                navigate('/');
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -45,16 +47,17 @@ const Login = () => {
                         <input type="email" id="email" value={email}
                                onChange={(e) => setEmail(e.target.value)} required/>
                         <label>Hasło</label>
-                        <input type="password" id="passord" value={password}
+                        <input type="password" id="password" value={password}
                                onChange={(e) => setPassword(e.target.value)}
                                required/>
                     </section>
+                    <section className="register-buttons">
+                        <button type="button" onClick={() => window.location.href = '/register'}>Załóż konto</button>
+                        <button type="submit">Zaloguj się</button>
+                    </section>
                 </form>
 
-                <section className="register-buttons">
-                    <button type="button" onClick={() => window.location.href = '/register'}>Załóż konto</button>
-                    <button type="submit">Zaloguj się</button>
-                </section>
+
                 {error && <p className="error-message">{error}</p>}
 
             </div>
