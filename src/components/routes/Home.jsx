@@ -3,7 +3,7 @@ import {Element} from 'react-scroll';
 import { auth } from '../../firebase';
 import { onAuthStateChanged } from "firebase/auth";
 
-import Footer from "../layout/NotLogged/Footer";
+import Footer from "../layout/Basic/Footer";
 import HomeStart from "../layout/Home/HomeStart";
 import HomeThreeColumns from "../layout/Home/HomeThreeColumns";
 import HomeFourSteps from "../layout/Home/HomeFourSteps";
@@ -19,12 +19,12 @@ const Home = () => {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        // Obserwator stanu logowania
+        // State
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
         });
 
-        // Czyszczenie obserwatora przy odmontowaniu komponentu
+        // Clean state
         return () => unsubscribe();
     }, []);
 

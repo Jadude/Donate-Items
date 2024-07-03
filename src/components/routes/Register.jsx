@@ -48,34 +48,38 @@ const Register = () => {
             <div className="login">
                 <h2>Zarejestruj się</h2>
                 <img src={decoration} alt="decoration"/>
-                <form className="register-form" onSubmit={handleRegister}>
-                    <label>Email</label>
-                    <input
-                        type="email"
-                        id="email-reg"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                    <label>Hasło</label>
-                    <input
-                        type="password"
-                        id="password-reg"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                    <label>Potwierdź hasło</label>
-                    <input
-                        type="password"
-                        id="confirm-password-reg"
-                        value={confirmPassword}
-                        onChange={(e) => setConfirmPassword(e.target.value)}
-                        required
-                    />
-                    <button type="submit">Zarejestruj się</button>
-                    <button type="button" onClick={() => window.location.href = '/login'}>Zaloguj się</button>
+                <form className="login-form" onSubmit={handleRegister}>
+                    <section className="register-inputs">
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            id="email-reg"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                        <label>Hasło</label>
+                        <input
+                            type="password"
+                            id="password-reg"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                        <label>Potwierdź hasło</label>
+                        <input
+                            type="password"
+                            id="confirm-password-reg"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                            required
+                        />
+                    </section>
                 </form>
+                <section className="register-buttons">
+                    <button type="button" onClick={() => window.location.href = '/login'}>Zaloguj się</button>
+                    <button type="submit">Zarejestruj się</button>
+                </section>
                 {error && <p className="error-message">{error}</p>}
                 {success && <p className="success-message">{success}</p>}
             </div>

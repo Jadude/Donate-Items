@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import {auth} from '../../firebase';
 import {signInWithEmailAndPassword} from 'firebase/auth';
 // Components
-import LogOutHeader from "../layout/NotLogged/LogOutHeader";
+import HomeHeaderLogIn from "../layout/NotLogged/HomeHeaderLogIn";
 // Assets
 import decoration from '../../assets/icons/Decoration.svg';
 
@@ -34,7 +34,7 @@ const Login = () => {
 
     return (
         <>
-            <LogOutHeader/>
+            <HomeHeaderLogIn/>
             <div className="login">
                 <h2>Zaloguj się</h2>
                 <img src={decoration} alt="decoration"/>
@@ -49,11 +49,12 @@ const Login = () => {
                                onChange={(e) => setPassword(e.target.value)}
                                required/>
                     </section>
-                    <section className="register-buttons">
-                        <button type="button" onClick={() => window.location.href = '/register'}>Załóż konto</button>
-                        <button type="submit">Zaloguj się</button>
-                    </section>
                 </form>
+
+                <section className="register-buttons">
+                    <button type="button" onClick={() => window.location.href = '/register'}>Załóż konto</button>
+                    <button type="submit">Zaloguj się</button>
+                </section>
                 {error && <p className="error-message">{error}</p>}
 
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LogOutHeader = () => {
+const HomeHeaderLogIn = () => {
     return (
         <header className="App-header">
             <div className="App-header-log App-header-log-login">
@@ -22,4 +22,4 @@ const LogOutHeader = () => {
     );
 };
 
-export default LogOutHeader;
+export default HomeHeaderLogIn;
