@@ -46,7 +46,7 @@ const HomeHeaderLogged = () => {
             </div>
             <nav className="App-header-nav">
                 <ul>
-                    <li><a href="/">Start</a></li>
+                    <li><a href="/public">Start</a></li>
                     <li><Link to="section1" spy={true} smooth={true} duration={500}>O co chodzi?</Link></li>
                     <li><Link to="section2" spy={true} smooth={true} duration={500}>O nas</Link></li>
                     <li><Link to="section3" spy={true} smooth={true} duration={500}>Fundacja i organizacje</Link></li>

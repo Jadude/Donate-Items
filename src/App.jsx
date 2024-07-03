@@ -6,7 +6,7 @@ import Login from "./components/routes/Login";
 import Logout from "./components/routes/Logout";
 import Register from "./components/routes/Register";
 import Error404 from "./components/routes/Error404";
-import HomeHeaderLogged from "./components/layout/Basic/HomeHeaderLogged";
+import HomeHeaderLogged from "./components/layout/Logged/HomeHeaderLogged";
 
 function App() {
 
@@ -15,7 +15,6 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/login" element={<Login/>}/>
-                <Route path="/logged" element={<HomeHeaderLogged/>}/>
                 <Route path="/register" element={<Register/>}/>
                 <Route path="/logout" element={<Logout/>}/>
                 <Route path="*" element={<Error404 />}/>

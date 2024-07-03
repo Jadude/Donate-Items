@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import {auth} from '../../firebase';
 import {signInWithEmailAndPassword} from 'firebase/auth';
 // Components
-import LogOutHeader from "../layout/Basic/LogOutHeader";
+import LogOutHeader from "../layout/NotLogged/LogOutHeader";
 // Assets
 import decoration from '../../assets/icons/Decoration.svg';
 

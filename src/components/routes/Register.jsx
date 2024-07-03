@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../firebase';
 
 
-import LoginHeader from "../layout/Basic/HomeHeader";
+import LoginHeader from "../layout/NotLogged/HomeHeader";
 import decoration from '../../assets/icons/Decoration.svg';
 
 const Register = () => {

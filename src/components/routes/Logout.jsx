@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeHeader from "../layout/Basic/HomeHeader";
+import HomeHeader from "../layout/NotLogged/HomeHeader";
 import decoration from '../../assets/icons/Decoration.svg';
 
 const Logout = () => {

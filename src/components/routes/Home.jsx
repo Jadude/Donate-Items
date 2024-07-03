@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import {Element} from 'react-scroll';
-import Footer from "../layout/Basic/Footer";
+import { auth } from '../../firebase';
+import { onAuthStateChanged } from "firebase/auth";
+
+import Footer from "../layout/NotLogged/Footer";
 import HomeStart from "../layout/Home/HomeStart";
 import HomeThreeColumns from "../layout/Home/HomeThreeColumns";
 import HomeFourSteps from "../layout/Home/HomeFourSteps";
 import HomeAboutUs from "../layout/Home/HomeAboutUs";
 import HomeHelp from "../layout/Home/HomeHelp";
 import HomeForm from "../layout/Home/HomeForm";
-import HomeHeader from "../layout/Basic/HomeHeader";
+import HomeHeader from "../layout/NotLogged/HomeHeader";
+import HomeHeaderLogged from "../layout/Logged/HomeHeaderLogged";
+
+
 
 const Home = () => {
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        // Obserwator stanu logowania
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser);
+        });
+
+        // Czyszczenie obserwatora przy odmontowaniu komponentu
+        return () => unsubscribe();
+    }, []);
+
+
     return (
         <>
-            <HomeHeader />
+            {user ? <HomeHeaderLogged /> : <HomeHeader />}
             <main>
                 <HomeStart/>
                 <HomeThreeColumns/>
